@@ -198,37 +198,60 @@
                     </svg>
                 </button>
             </div>
-            <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="#">
-                <h3 class="text-xl font-medium text-gray-900 dark:text-white">Edit profile</h3>
-                <div>
-                    <label for="email" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">First Name</label>
-                    <input type="email" name="email" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                        placeholder="" required="">
-                </div>
-                <div>
-                    <label for="password" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">lasname</label>
-                    <input type="password" name="password" id="password" 
-                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                        required="">
-                </div>
-                <div>
-                    <label for="password" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">number</label>
-                    <input type="password" name="password" id="password" 
-                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                        required="">
-                </div>
-                <div class="flex justify-between">
-                    <div class="flex items-start">
-                        
+            <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="https://formbold.com/s/FORM_ID" method="POST">
+                    <div class="mb-5">
+                        <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Name
+                        </label>
+                        <input type="email" name="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" />
                     </div>
-                    <a href="#" data-modal-toggle="pas-modal" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
-                </div>
-                <button type="submit"
-                    class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center 
-                    dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">comfrim</button>
-                
-            </form>
+                    <div class="mb-5">
+                        <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">
+                            Number
+                        </label>
+                        <input type="email" name="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" />
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">
+                            email
+                        </label>
+                        <input type="email" name="email" id="email"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" />
+                    </div>
+                    <div class="mb-6 pt-4">
+                        <label class="mb-5 block text-xl font-semibold text-[#07074D]">
+                            Upload File
+                        </label>
+
+                        <div class="mb-8">
+                            <!-- component -->
+                            <div class="flex = w-full items-center justify-center ">
+                                <div class="rounded-md border border-gray-100 bg-white p-4 shadow-md">
+                                    <label for="upload" class="flex flex-col items-center gap-2 cursor-pointer">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-10 w-10 fill-white stroke-indigo-500" viewBox="0 0 24 24"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        </svg>
+                                        <span class="text-gray-600 font-medium">Upload file</span>
+                                    </label>
+                                    <input id="upload" type="file" class="hidden" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <button
+                            class="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
+                            Send File
+                        </button>
+                    </div>
+                </form>
         </div>
     </div>
 </div>
@@ -236,39 +259,7 @@
 
 
 
-<!-- Main modal -->
-<div id="pas-modal" aria-hidden="true"
-    class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
-    <div class="relative w-full max-w-md px-4 h-full md:h-auto">
-        <!-- Modal content -->
-        <div class="bg-white rounded-lg shadow relative dark:bg-gray-700">
-            <div class="flex justify-end p-2">
-                <button type="button"
-                    class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
-                    data-modal-toggle="pas-modal">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" action="#">
-                <h3 class="text-xl font-medium text-gray-900 dark:text-white">Edit pas</h3>
-                <div>
-                    <label for="email" class="text-sm font-medium text-gray-900 block mb-2 dark:text-gray-300">FNew pas</label>
-                    <input type="email" name="email" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                        placeholder="" required="">
-                </div>
-                <button type="submit"
-                    class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center 
-                    dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">comfrim</button>
-                
-            </form>
-        </div>
-    </div>
-</div>
+
 </div>
 
 <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
