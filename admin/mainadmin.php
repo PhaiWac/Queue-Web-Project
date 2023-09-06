@@ -1,5 +1,22 @@
 <?php include("../abject/index.php");?>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'Kanit';
+      src: url('../font/Kanit-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
+    body {
+      font-family: 'Kanit', sans-serif;
+    }
+  </style>
+</head>
 <div class="content ml-12 transform ease-in-out duration-500 pt-20 px-2 md:px-5 pb-4 ">
     <?php include("../abject/search.php");?>
 

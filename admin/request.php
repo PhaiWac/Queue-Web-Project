@@ -1,7 +1,7 @@
-<?php include("../abject/index.php");?>
+<?php include("../../abject/index.php");?>
 
 <div class="content ml-12 transform ease-in-out duration-500 pt-20 px-2 md:px-5 pb-4 bg-gradient-to-br px-2">
-    <?php include("../abject/search.php");?>
+    <?php include("../../abject/search.php");?>
 
     <nav class="flex-container px-5 py-3 text-gray-700  rounded-lg bg-gray-50 dark:bg-[#1E293B] "
         aria-label="Breadcrumb">
@@ -32,35 +32,37 @@
             </li>
         </ol>
     </nav>
-    <div class="flex flex-wrap my-5 mx-2 ">
-        <div class="w-full  lg:w-1/4 p-2 ">
-            <div
-                class='bg-white rounded-3xl shadow-xl overflow-hidden hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0'>
-                <div class='max-w-md mx-auto'>
-                    <div class='h-[236px]'
-                        style='background-image:url(https://img.freepik.com/free-photo/pasta-spaghetti-with-shrimps-sauce_1220-5072.jpg?w=2000&t=st=1678041911~exp=1678042511~hmac=e4aa55e70f8c231d4d23832a611004f86eeb3b6ca067b3fa0c374ac78fe7aba6);background-size:cover;background-position:center'>
-                    </div>
-                    <div class='p-4 sm:p-6'>
-                        <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'>ชื่อ</p>
-                        <div class='flex flex-row'>
-                            <p class='text-[17px] font-bold text-[#0FB478]'>ประเภท</p>
+
+    <?php foreach ($data as $value) : ?> 
+
+        <div class="flex flex-wrap my-5 mx-2 ">
+            <div class="w-full  lg:w-1/4 p-2 ">
+                <div
+                    class='bg-white rounded-3xl shadow-xl overflow-hidden hover:border-transparent transition ease-in duration-200 transform hover:-translate-y-1 active:translate-y-0'>
+                    <div class='max-w-md mx-auto'>
+                        <div class='h-[236px]'
+                            style='background-image:url(https://img.freepik.com/free-photo/pasta-spaghetti-with-shrimps-sauce_1220-5072.jpg?w=2000&t=st=1678041911~exp=1678042511~hmac=e4aa55e70f8c231d4d23832a611004f86eeb3b6ca067b3fa0c374ac78fe7aba6);background-size:cover;background-position:center'>
                         </div>
-                        <p class='text-[#7C7C80] font-[15px] mt-6'>330 ถ.เชียงใหม่-ลำปาง ต.ป่าตัน อ.เมือง
-                            รหัสไปรษณีย์ 50300 เชียงใหม่</p>
-                            <p class='text-[#7C7C80] font-[15px] mt-6'>เบอร์โทร 0925307452</p>
-                        <a target='_blank' href='foodiesapp://food/1001'
-                            class='block mt-10 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform bg-[#FFC933] rounded-[14px] hover:bg-[#FFC933DD] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
-                          ยืนยันคำขอ
-                        </a>
-                        <a target='_blank' href="https://apps.apple.com/us/app/id1493631471"
-                            class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
-                            ลบคำขอ
-                        </a>
+                        <div class='p-4 sm:p-6'>
+                            <p class='font-bold text-gray-700 text-[22px] leading-7 mb-1'><?= $value['namerequest'] ?></p>
+                            <p class='text-[#7C7C80] font-[15px] mt-6'><?= $value['address'] ?></p>
+                                <p class='text-[#7C7C80] font-[15px] mt-6'><?= $value['number'] ?></p>
+                            <a target='_blank' href=''
+                                class='block mt-10 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform bg-[#FFC933] rounded-[14px] hover:bg-[#FFC933DD] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                            ยืนยันคำขอ
+                            </a>
+                            <a target='_blank' href=""
+                                class='block mt-1.5 w-full px-4 py-3 font-medium tracking-wide text-center capitalize transition-colors duration-300 transform rounded-[14px] hover:bg-[#F2ECE7] hover:text-[#000000dd] focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-80'>
+                                ลบคำขอ
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        
+    <?php endforeach ?>
+    
 </div>
 <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
 

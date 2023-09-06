@@ -59,19 +59,19 @@
             
             <div class="">
                 
-                <form class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8"  method="POST">
+                <form  enctype="multipart/form-data" action = "../config/controller/User.php?id=editprofile" class="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8"  method="POST">
                     <div class="mb-5">
                         <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">
                             Name
                         </label>
-                        <input type="email" name="email" id="email"
+                        <input type="text" name="username" id="email"
                             class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" />
                     </div>
                     <div class="mb-5">
                         <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">
                             Number
                         </label>
-                        <input type="email" name="email" id="email"
+                        <input type="number" name="number" id="email"
                             class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" />
                     </div>
                     <div class="mb-5">
@@ -99,7 +99,7 @@
                                         </svg>
                                         <span class="text-gray-600 font-medium">Upload file</span>
                                     </label>
-                                    <input id="upload" type="file" class="hidden" />
+                                    <input id="upload" type="file"  name = 'img' class="hidden" />
                                 </div>
                             </div>
                         </div>

@@ -97,13 +97,12 @@ require_once '../config/db.php';
                 </div>
               </div>
             </div>
-            <div>
-              <button type="submit"
-                class="mt-4 w-full flex justify-center text-black bg-[#F8EDEC]  hover:bg-[#EBB1C5]  hover:text-white text-gray-600 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">
-                Sign in
-              </button>
-            </div>
+           
           </div>
+          <button type="submit"
+              class="mt-4 w-full flex justify-center text-black bg-[#F8EDEC]  hover:bg-[#EBB1C5]  hover:text-white text-gray-600 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">
+              Sign in
+            </button>
       </form>
     </div>
 

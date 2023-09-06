@@ -79,9 +79,9 @@
               <span> Nanthakan</span>
             </button>
             <ul class="dropdown-content h-11 w-full  absolute hidden text-white pt-1">
-              <li><a class="rounded-t bg-purple-500 hover:bg-purple-400 py-2 px-4 block whitespace-no-wrap"
+              <li><a href="profile.php" class="rounded-t bg-purple-500 hover:bg-purple-400 py-2 px-4 block whitespace-no-wrap"
                   href="profile.php">Profile</a></li>
-              <li><a class="bg-purple-500 hover:bg-purple-400 py-2 px-4 block whitespace-no-wrap" href="#">Loguot</a>
+              <li><a href="../config/logout.php" class="bg-purple-500 hover:bg-purple-400 py-2 px-4 block whitespace-no-wrap" href="#">Loguot</a>
               </li>
             </ul>
           </div>

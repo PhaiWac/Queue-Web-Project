@@ -1,15 +1,13 @@
 <?php
 require_once 'db.php';
-$fname=$_POST['firstname'];
-$lname=$_POST['lastname'];
-$email=$_POST['email'];
+$username=$_POST['username'];
 $number=$_POST['number'];
+$email=$_POST['email'];
 $pass=$_POST['password'];
-$cpass=$_POST['cpassword'];
 
-if ($pass!=$cpass) return header('location:../admin/usersing.php');
-$sql = "INSERT INTO user (firstname, lastname, email, number, password) VALUES ('$fname', '$lname', '$email', '$number', '$pass')";
+$sql = "INSERT INTO user (username, number, email, password,role) VALUES ('$username',  '$number','$email', '$pass', 'user')";
 // ฟังชั่นก์
 mysqli_query($conn, $sql) ;
-return header('location:../admin/test.php');
+echo $sql ;
+return header('location:../abject/login.php');
 ?>
