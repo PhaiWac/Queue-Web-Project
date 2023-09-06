@@ -77,17 +77,13 @@
                             
                         </span>
                         
-                        <button data-modal-toggle="pas-modal" class="text-sm border border-gray-200 bg-gray-200 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 focus:outline-none focus:shadow-outline">แก้ไขรหัส</button>
+                       
                     </div>
                     <div class="text-gray-700">
                         <div class="grid md:grid-cols-2 text-sm">
                             <div class="grid grid-cols-2">
-                                <div class="px-4 py-2 font-semibold">First Name</div>
+                                <div class="px-4 py-2 font-semibold">Name</div>
                                 <div class="px-4 py-2">ควย</div>
-                            </div>
-                            <div class="grid grid-cols-2">
-                                <div class="px-4 py-2 font-semibold">Last Name</div>
-                                <div class="px-4 py-2">ตวย</div>
                             </div>
                             <div class="grid grid-cols-2">
                                 <div class="px-4 py-2 font-semibold">number</div>

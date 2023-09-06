@@ -51,6 +51,9 @@
                         นายสมพง
                     </div>
                     <div class="">
+                        email
+                    </div>
+                    <div class="">
                        เบอร์โทร จจจจจจจจจจ
                     </div>
                 </div>
