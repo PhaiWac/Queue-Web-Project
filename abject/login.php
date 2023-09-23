@@ -5,117 +5,121 @@ require_once '../config/db.php';
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @font-face {
-      font-family: 'Kanit';
-      src: url('../font/Kanit-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'Kanit';
+            src: url('../font/Kanit-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-    body {
-      font-family: 'Kanit', sans-serif;
-    }
-  </style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
 </head>
 <!-- component -->
-<div class="bg-no-repeat bg-cover bg-center relative" style="background-image: url();">
-  <div class="absolute bg-[#A780DA] from-green-500 to-green-400 opacity-75 inset-0 z-0"></div>
-  <div class="min-h-screen sm:flex sm:flex-row mx-0 justify-center">
-    <div class="flex-col flex  self-center p-10 sm:max-w-5xl xl:max-w-2xl  z-10">
-      <div class="self-start hidden lg:flex flex-col  text-white">
-        <img src="" class="mb-3">
-        <h1 class="mb-3 font-bold text-5xl">Hi ยินดีต้อนรับ</h1>
-        <p class="pr-3">เบื่อการต้องไปต่อคิวหน้าร้านหรือเปล่า?
-          มาใช้บริการเราสิ แล้วคุณจะสนุกกับการทานมากขึ้น
-        </p>
-      </div>
-    </div>
-    <div class="flex justify-center self-center  z-10">
-      <form action="../config/login.php" method="post" class="p-12 bg-white mx-auto rounded-2xl w-100 ">
-        <div class="mb-4">
-          <h3 class="font-semibold text-2xl text-gray-800">เข้าสู่ระบบบ</h3>
-          <p class="text-gray-500">เข้าสู่ระบบเพื่อเปืดประสบการณ์ ก่ีใช้งาน</p>
+
+<body>
+    <section class="min-h-screen flex items-stretch text-white ">
+        <div class="lg:flex  hidden bg-purple-500 bg-no-repeat bg-cover relative items-center"
+            style="background-image: url(https://img.freepik.com/premium-photo/american-fast-food-hamburgers-french-fries-hot-dogs-fast-food-unhealthy-eating-concept-top-view_114941-2545.jpg?w=2000);">
+            <div class="absolute bg-purple-500 opacity-60 inset-0 z-0"></div>
+            <div class="w-full px-24 z-10">
+                <h1 class="text-5xl font-bold text-left tracking-wide">Hi ยินดีต้อนรับ</h1>
+                <p class="text-3xl my-4">เบื่อการต้องไปต่อคิวหน้าร้านหรือเปล่า? มาใช้บริการเราสิ
+                    แล้วคุณจะสนุกกับการทานมากขึ้น</p>
+            </div>
+            <div class="bottom-0 absolute p-4 text-center right-0 left-0 flex justify-center space-x-4">
+                <span>
+                    <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                    </svg>
+                </span>
+                <span>
+                    <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                </span>
+                <span>
+                    <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </span>
+            </div>
         </div>
-        <div class="space-y-5">
-          <div class="space-y-2">
-            <label class="text-sm font-medium text-gray-700 tracking-wide">Email</label>
-            <input
-              class=" w-full text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-[#7F61A7]"
-              type="text" name="email">
-          </div>
-          <div class="space-y-2">
-            <label class="mb-5 text-sm font-medium text-gray-700 tracking-wide">
-              Password
-            </label>
-            <input
-              class="w-full content-center text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-[#7F61A7]"
-              type="text" name="Password">
-          </div>
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <input id="remember_me" name="remember_me" type="checkbox"
-                class="h-4 w-4 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded">
-              <label for="remember_me" class="ml-2 block text-sm text-[#A880D9]">
-                Remember me
-              </label>
+        <div class="lg:w-1/2 w-full flex items-center justify-center text-center md:px-16 px-0 z-0"
+            style="background-color: #c084fc;">
+            <div class="absolute lg:hidden z-10 inset-0 bg-purple-500 bg-no-repeat bg-cover items-center"
+                style="background-image: url(https://img.freepik.com/premium-photo/american-fast-food-hamburgers-french-fries-hot-dogs-fast-food-unhealthy-eating-concept-top-view_114941-2545.jpg?w=2000">
+                <div class="absolute bg-purple-500 opacity-60 inset-0 z-0"></div>
             </div>
-            <div class="text-sm">
-              <a href="#" class="text-[#A880D9] hover:text-[#EBB1C5]">
-                Forgot your password?
-              </a>
+            <div class="w-full py-6 z-20">
+                <p class="text-5xl "> MONGKOL</p>
+
+                <form action="" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+                    <div class="pb-2 pt-4 ">
+                        <input type="email" name="email" id="email" placeholder="อีเมล"
+                            class="block w-full p-4 text-base rounded-lg bg-[#F8EDEC]">
+                    </div>
+                    <div class="pb-2 pt-4">
+                        <input class="block w-full p-4 text-base rounded-lg bg-[#F8EDEC] " type="password"
+                            name="password" id="password" placeholder="รหัสผ่าน">
+                    </div>
+                    <div class="text-right text-gray-800 hover:underline hover:text-gray-100">
+                        <a href="#">ลืมรหัสผ่าน</a>
+                    </div>
+                    <div class="px-4 pb-2 pt-4">
+                        <button
+                            class="uppercase block w-full p-4 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none">sign
+                            in</button>
+                    </div>
+                    <!-- drowdaw -->
+                   
+                    <div class="max-w-lg mx-auto">
+                        <button
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                            type="button" data-dropdown-toggle="dropdown">ลงทะเบียน<svg class="w-4 h-4 ml-2"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
+
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-100 list-none divide-y divide-gray-100 rounded shadow "
+                            id="dropdown">
+                           
+                            <ul class="px-4 " aria-labelledby="dropdown">
+                                <li>
+                                    <a href="singinuser.php"
+                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">ลูกค้าทั่วไป</a>
+                                </li>
+                                <li>
+                                    <a href="singinres.php"
+                                        class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">ร้านอาหาร</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+
+                    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+                    <!-- drowdaw -->
+                </form>
             </div>
-          </div>
-          <div class="w-full relative inline-block text-left dropdown">
-            <span class="rounded-md shadow-sm"><button
-                class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
-                type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
-                <span>ลงทะเบียน</span>
-                <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </button></span>
-            <div
-              class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-              <div
-                class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-                <div class="py-1">
-                  <a href="singinuser.php" tabindex="0"
-                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
-                    role="menuitem">ผู้ใช้งาน</a>
-                  <a href="singinres.php" tabindex="1"
-                    class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
-                    role="menuitem">ร้านอาหาร</a>
-
-                </div>
-              </div>
-            </div>
-           
-          </div>
-          <button type="submit"
-              class="mt-4 w-full flex justify-center text-black bg-[#F8EDEC]  hover:bg-[#EBB1C5]  hover:text-white text-gray-600 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">
-              Sign in
-            </button>
-      </form>
-    </div>
-
-    <style>
-      .dropdown:focus-within .dropdown-menu {
-        opacity: 1;
-        transform: translate(0) scale(1);
-        visibility: visible;
-      }
-    </style>
-  </div>
-</div>
-
+        </div>
+    </section>
 </body>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </html>
