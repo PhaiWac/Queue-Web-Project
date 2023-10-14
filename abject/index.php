@@ -25,7 +25,7 @@
   <body class="body bg-white ">
     <div class="fixed w-full z-30 flex bg-[#EFF2F8]  p-2 items-center  h-16 px-10">
       <div
-        class="logo ml-12 dark:text-white  transform ease-in-out duration-500 flex-none h-full flex items-center justify-center">
+        class="logo ml-12  text-dark  transform ease-in-out duration-500 flex-none h-full flex items-center justify-center">
         MONGKOL
       </div>
 

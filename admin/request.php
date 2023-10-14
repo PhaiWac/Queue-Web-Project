@@ -1,7 +1,7 @@
-<?php include("../../abject/index.php");?>
+<?php include("../abject/index.php");?>
 
 <div class="content ml-12 transform ease-in-out duration-500 pt-20 px-2 md:px-5 pb-4 bg-gradient-to-br px-2">
-    <?php include("../../abject/search.php");?>
+    <?php include("../abject/search.php");?>
 
     <nav class="flex-container px-5 py-3 text-gray-700  rounded-lg bg-gray-50 dark:bg-[#1E293B] "
         aria-label="Breadcrumb">
@@ -33,8 +33,6 @@
         </ol>
     </nav>
 
-    <?php foreach ($data as $value) : ?> 
-
         <div class="flex flex-wrap my-5 mx-2 ">
             <div class="w-full  lg:w-1/4 p-2 ">
                 <div
@@ -61,8 +59,7 @@
             </div>
         </div>
         
-    <?php endforeach ?>
-    
+
 </div>
 <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
 

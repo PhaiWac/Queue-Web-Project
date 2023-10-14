@@ -3,11 +3,11 @@
 <div class="content ml-12 transform ease-in-out duration-500 pt-20 px-2 md:px-5 pb-4 bg-gradient-to-br px-2">
     <?php include("../abject/search.php");?>
 
-    <nav class="flex px-5 py-3 text-gray-700  rounded-lg bg-gray-50 dark:bg-[#1E293B] " aria-label="Breadcrumb">
+    <nav class="flex px-5 py-3 text-gray-700  rounded-lg bg-gray-50  " aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
             <li class="inline-flex items-center">
                 <a href="mainadmin.php"
-                    class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                    class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 ">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -26,7 +26,7 @@
                             clipRule="evenodd"></path>
                     </svg>
                     <a href="#"
-                        class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">ข้อมูลร้านอ</a>
+                        class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 ">ข้อมูลร้านอ</a>
                 </div>
             </li>
         </ol>
